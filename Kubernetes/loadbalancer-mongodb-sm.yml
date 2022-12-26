@@ -6,8 +6,8 @@ metadata:
     app: mongodb-service
 spec:
   ports:
-    - port: 27717
-      targetPort: 27017
+    - port: ${port}
+      targetPort: ${targetport}
   selector:
     app: mongodb
   type: LoadBalancer
