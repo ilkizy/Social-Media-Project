@@ -4,8 +4,8 @@ server:
 spring:
   security:
     user:
-      name: ilkiz
-      password: 123
+      name: ${user}
+      password: ${password}
   rabbitmq:
     host: ${rabbitmqhost}
     port: ${rabbitmqport}
