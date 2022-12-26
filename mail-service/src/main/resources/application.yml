@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    host: ${rabbitmqhost}
+    port: ${rabbitmqport}
+    username: ${rabbitmqusername}
+    password: ${rabbitmqpassword}
+  mail:
+    host: ${mailservicehost}
+    port: ${mailserviceport}
+    username: ${mailserviceusername}
+    password: ${mailservicepassword}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

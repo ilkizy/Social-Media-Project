@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      uri: ${configserverurl}
+  config:
+    import: "configserver:"
+  application:
+    name: elastic-service-dev

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: loadbalancer-mongo-sm
+  labels:
+    app: mongodb-service
+spec:
+  ports:
+    - port: 27717
+      targetPort: 27017
+  selector:
+    app: mongodb
+  type: LoadBalancer
